@@ -14,6 +14,8 @@ dnf install -y \
 	autoconf \
 	autoconf-archive \
 	gdb \
+	powerline \
+	powerline-fonts \
 	zsh
 
 dnf -y clean all
