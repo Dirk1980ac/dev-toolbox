@@ -17,7 +17,8 @@ dnf install -y \
 	powerline \
 	powerline-fonts \
 	pcsc-tools \
-	zsh
+	zsh \
+	mc
 
 dnf -y clean all
 
