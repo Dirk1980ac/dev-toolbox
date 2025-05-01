@@ -1,10 +1,11 @@
 FROM registry.fedoraproject.org/fedora-toolbox:latest
 
 RUN <<END_OF_BLOCK
+set -euo pipefail
 
-dnf upgrade -y
+dnf -y upgrade
 
-dnf install -y \
+dnf -y install \
 	glib2-devel \
 	pcsc-lite-devel \
 	libevent-devel \
