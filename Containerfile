@@ -5,24 +5,23 @@ set -euo pipefail
 
 dnf -y upgrade
 
-dnf -y install \
+dnf -y --setopt="install_weak_deps=False" install \
 	glib2-devel \
 	pcsc-lite-devel \
 	libevent-devel \
 	check-devel \
-	mariadb-devel \
+	mariadb-connector-c-devel \
 	automake \
 	autoconf \
 	autoconf-archive \
-	gdb \
 	powerline \
 	powerline-fonts \
 	pcsc-tools \
-	zsh \
-	mc \
 	valgrind \
 	rpmbuild \
-	@c-development
+	gdb \
+	gcc \
+	mc
 
 dnf -y clean all
 
