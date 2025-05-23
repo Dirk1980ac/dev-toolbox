@@ -19,7 +19,10 @@ dnf -y install \
 	powerline-fonts \
 	pcsc-tools \
 	zsh \
-	mc
+	mc \
+	valgrind \
+	rpmbuild \
+	@c-development
 
 dnf -y clean all
 
