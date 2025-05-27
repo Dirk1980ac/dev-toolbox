@@ -17,6 +17,7 @@ dnf -y --setopt="install_weak_deps=False" install \
 	autoconf \
 	valgrind \
 	rpmbuild \
+	lshw \
 	gdb \
 	gcc \
 	mc
