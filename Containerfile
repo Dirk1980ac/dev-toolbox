@@ -17,8 +17,6 @@ LABEL version=${buildid}
 RUN <<END_OF_BLOCK
 set -euo pipefail
 
-hostnamectl set-hostname <new_hostname>
-
 dnf -y upgrade
 
 dnf -y --setopt="install_weak_deps=False" install \
@@ -39,6 +37,7 @@ dnf -y --setopt="install_weak_deps=False" install \
 	gdb \
 	gcc \
 	zsh \
+	less \
 	mc
 
 dnf -y clean all
