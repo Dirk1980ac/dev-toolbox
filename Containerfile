@@ -8,7 +8,7 @@ LABEL license="MIT"
 LABEL name=${imagename}
 LABEL org.opencontainers.image.license="MIT"
 LABEL org.opencontainers.image.name=${imagename}
-LABEL org.opencontainers.image.url=
+LABEL org.opencontainers.image.url="https://github.com/Dirk1980ac/dev-toolbox"
 LABEL org.opencontainers.image.vendor="Dirk Gottschalk"
 LABEL org.opencontainers.image.version=${buildid}
 LABEL vendor="Dirk Gottschalk"
@@ -28,13 +28,13 @@ dnf -y --setopt="install_weak_deps=False" install \
 	libevent-devel \
 	check-devel \
 	glib2-devel \
-	pcsc-tools \
 	automake \
 	autoconf \
 	valgrind \
 	rpmbuild \
 	intltool \
 	libtool \
+	make \
 	lshw \
 	gdb \
 	gcc \
