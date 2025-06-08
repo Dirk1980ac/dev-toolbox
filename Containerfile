@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora-minimal:latest
+FROM registry.fedoraproject.org/fedora:latest
 
 ENV imagename=dev-toolbox
 ARG buildid="unset"
