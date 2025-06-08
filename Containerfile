@@ -17,7 +17,7 @@ LABEL version=${buildid}
 RUN <<END_OF_BLOCK
 set -euo pipefail
 
-echo ${imagename} > /etc/hostname
+hostnamectl set-hostname <new_hostname>
 
 dnf -y upgrade
 
