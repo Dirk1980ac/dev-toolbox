@@ -24,6 +24,7 @@ dnf -y --setopt="install_weak_deps=False" install \
 	autoconf-archive \
 	pcsc-lite-devel \
 	libevent-devel \
+	systemd-devel \
 	check-devel \
 	glib2-devel \
 	automake \
