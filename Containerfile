@@ -1,17 +1,16 @@
 FROM registry.fedoraproject.org/fedora:latest
 
-ENV imagename=dev-toolbox
+ENV TOOLBOX_NAME="dev-toolbox"
 ARG buildid="unset"
 
 LABEL com.github.containers.toolbox="true"
 LABEL license="MIT"
-LABEL name=${imagename}
+LABEL name=${TOOLBOX_NAME}
 LABEL org.opencontainers.image.license="MIT"
-LABEL org.opencontainers.image.name=${imagename}
+LABEL org.opencontainers.image.name=${TOOLBOX_NAME}
 LABEL org.opencontainers.image.url="https://github.com/Dirk1980ac/dev-toolbox"
 LABEL org.opencontainers.image.vendor="Dirk Gottschalk"
 LABEL org.opencontainers.image.version=${buildid}
-LABEL vendor="Dirk Gottschalk"
 LABEL version=${buildid}
 
 RUN <<END_OF_BLOCK
