@@ -1,11 +1,9 @@
-FROM registry.fedoraproject.org/fedora:latest
+FROM quay.io/fedora/fedora:latest
 
 COPY README.md /
 
 RUN <<EORUN
-set -euo pipefail
-
-dnf -y upgrade
+set -eu
 
 dnf -y --setopt="install_weak_deps=False" install \
 	mariadb-connector-c-devel \
@@ -30,7 +28,7 @@ dnf -y --setopt="install_weak_deps=False" install \
 	mc
 
 dnf -y clean all
-find /var/{log,cache} -type f ! -empty -delete
+rm -rf /var/{log,cache}/*
 
 EORUN
 
