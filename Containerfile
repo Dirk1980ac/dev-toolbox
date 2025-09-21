@@ -28,8 +28,7 @@ dnf -y --setopt="install_weak_deps=False" install \
 	mc
 
 dnf -y clean all
-rm -rf /var/{log,cache}/*
-
+rm -rf /var/{log,cache,spool,tmp}/*
 EORUN
 
 ARG buildid="unset"
