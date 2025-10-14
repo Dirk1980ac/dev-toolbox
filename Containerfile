@@ -1,6 +1,6 @@
 FROM quay.io/fedora/fedora:latest
 
-COPY README.md /
+COPY README.md /README.md
 
 RUN <<EORUN
 set -eu
