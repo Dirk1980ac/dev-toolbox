@@ -1,3 +1,7 @@
+This project moved over to radicle and the GitHub repository has been archived.
+
+Follow [this link](https://app.radicle.xyz/nodes/seed.radicle.garden/rad:zWgQFt9GELvRQZWYtCtTJSLEnpDh) to get to the new repository.
+
 # dev-toolbox
 
 ## Background
